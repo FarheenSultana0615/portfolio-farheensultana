@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="dark"> 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Farheen Sultana | Web Developer</title>
+  <link rel="canonical" href="https://farheen-google-clone.netlify.app/" />
+  <meta name="description" content="Portfolio of Farheen Sultana, a passionate web developer and frontend enthusiast specializing in creating beautiful and functional user interfaces.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  
+  <meta property="og:title" content="Farheen Sultana | Web Developer">
+  <meta property="og:description" content="Portfolio of Farheen Sultana, a passionate web developer and frontend enthusiast.">
+  <meta property="og:image" content="assets/social-preview.jpg">
+  <meta name="twitter:image" content="assets/social-preview.jpg">
+  <meta property="og:url" content="https://farheen-google-clone.netlify.app/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Poppins', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+</head>
+<body class="bg-white text-black font-display dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <div class="cursor-glow"></div>
+
+  <header class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm sticky top-0 z-40 shadow-md">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold text-pink-500">Farheen S.</a>
+      <div class="hidden md:flex space-x-6">
+        <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-pink-500 transition">About</a>
+        <a href="#skills" class="text-gray-700 dark:text-gray-300 hover:text-pink-500 transition">Skills</a>
+        <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-pink-500 transition">Projects</a>
+        <a href="#blog" class="text-gray-700 dark:text-gray-300 hover:text-pink-500 transition">Blog</a>
+        <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-pink-500 transition">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <button id="themeToggle" class="fixed top-4 right-4 z-50 bg-gray-800 dark:bg-white p-2 rounded-full shadow-lg transition-transform transform hover:scale-110" aria-label="Toggle theme">
+    <svg id="themeIconSun" class="w-6 h-6 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+    <svg id="themeIconMoon" class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+  </button>
+
+  <section class="text-center py-20 bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-300 dark:from-pink-500 dark:via-purple-600 dark:to-indigo-600">
+    <h1 class="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white">Farheen Sultana</h1>
+    <p class="mt-4 text-lg md:text-xl text-gray-700 dark:text-gray-200">Frontend developer • UI/UX Enthusiast • Web Dev Intern </p>
+    <a href="resume.pdf" download="FarheenSultana-Resume.pdf" class="mt-8 inline-block bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition transform hover:scale-105">Download Resume</a>
+  </section>
+
+  <section id="about" class="max-w-4xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold mb-6 text-center text-pink-500">About Me</h2>
+    <p class="text-lg leading-relaxed text-center max-w-2xl mx-auto">
+      I'm a final-year BCA student with a passion for building beautiful and functional user experiences. I've been fortunate to gain hands-on experience through internships and freelance work, shaping my skills in both web development and digital marketing.
+    </p>
+    
+    <div class="mt-12 grid md:grid-cols-2 gap-8">
+      <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <h3 class="font-bold text-xl mb-3 text-purple-500">Web Development & Internships</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+          <li><strong>Intern @ Sam Data Services:</strong> Developed product pages using .NET and Bootstrap 5, and built custom WordPress sites with Elementor and WooCommerce.</li>
+          <li>Contributed to QA testing and SEO-focused technical blog writing.</li>
+          <li>Created product demo videos and animated tutorials using CapCut and Canva.</li>
+          <li>Assisted with digital marketing campaigns.</li>
+        </ul>
+      </div>
+      <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <h3 class="font-bold text-xl mb-3 text-purple-500">Design & Digital Marketing</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+          <li><strong>Freelance Branding – Premium Meats:</strong> Designed a complete brand identity including logos, flyers, and social media posts.</li>
+           <li><strong>Freelance Tutor (Drexel University):</strong> Remotely tutored university students in HTML, CSS, and JavaScript fundamentals.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <section id="skills" class="py-16 bg-white dark:bg-gray-800">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-purple-500 mb-12">My Toolkit</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        
+        <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-sm" data-aos="fade-up">
+          <h3 class="text-xl font-semibold mb-4 text-pink-500">Frontend</h3>
+          <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+            <li>HTML5</li>
+            <li>CSS3 & SASS</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+          </ul>
+        </div>
+  
+        <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-semibold mb-4 text-pink-500">Frameworks & Libraries</h3>
+          <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+            <li>Tailwind CSS</li>
+            <li>Bootstrap 5</li>
+            <li>GSAP (Animation)</li>
+            <li>.NET (basic exposure)</li>
+          </ul>
+        </div>
+  
+        <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="400">
+          <h3 class="text-xl font-semibold mb-4 text-pink-500">Tools & Platforms</h3>
+          <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+            <li>WordPress & Elementor</li>
+            <li>Git & GitHub</li>
+            <li>Figma & Canva</li>
+            <li>CapCut (Video Editing)</li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold mb-8 text-center text-purple-500">Projects & Experience</h2>
+    <div id="projectsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"></div>
+  </section>
+
+  <div id="modalOverlay" class="modal fixed inset-0 bg-black bg-opacity-70 items-center justify-center z-50 p-4">
+    <div id="modalContent" class="bg-white dark:bg-gray-800 rounded-lg max-w-2xl w-full p-6 relative text-black dark:text-white overflow-y-auto max-h-[90vh] shadow-xl">
+      <button id="closeModal" class="absolute top-3 right-4 text-3xl font-bold hover:text-red-500 transition-colors">&times;</button>
+      <h2 id="modalTitle" class="text-2xl font-bold mb-4"></h2>
+      <div id="modalMedia" class="space-y-4 mb-4"></div>
+      <p id="modalDescription" class="mt-4 text-base"></p>
+      <p id="modalTech" class="text-sm mt-2 text-gray-500 dark:text-gray-400"></p>
+      <div id="modalLinks" class="mt-6 flex flex-wrap gap-4"></div>
+    </div>
+  </div>
+
+  <section id="blog" class="py-16 bg-gray-50 dark:bg-gray-900">
+    <h2 class="text-3xl font-bold text-center text-pink-500 mb-12">Blog Posts</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+      <article class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">How I built my Google UI Clone</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">A breakdown of how I used HTML/CSS and GSAP to build a responsive landing page inspired by Google’s UI.</p>
+        <p class="font-medium text-pink-400">Coming Soon</p>
+      </article>
+      <article class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">5 Lessons from My Web Dev Internship</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">From debugging .NET pages to managing WordPress sites — here’s what interning taught me.</p>
+        <p class="font-medium text-pink-400">Coming Soon</p>
+      </article>
+      <article class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Why I Love Tailwind CSS</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Tailwind makes building UI fast, flexible, and fun. Here’s why it’s my favorite!</p>
+        <p class="font-medium text-pink-400">Coming Soon</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="text-center py-16 bg-gray-100 dark:bg-gray-800">
+    <h2 class="text-3xl font-bold text-pink-500 mb-6">Let's Connect</h2>
+    <form action="https://formspree.io/f/xkgbkren" method="POST" class="max-w-md mx-auto space-y-4 px-4">
+      <div>
+        <label for="name" class="sr-only">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required class="w-full px-4 py-2 rounded bg-white dark:bg-gray-700 dark:text-white shadow" />
+      </div>
+      <div>
+        <label for="email" class="sr-only">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required class="w-full px-4 py-2 rounded bg-white dark:bg-gray-700 dark:text-white shadow" />
+      </div>
+      <div>
+        <label for="message" class="sr-only">Your Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" required rows="4" class="w-full px-4 py-2 rounded bg-white dark:bg-gray-700 dark:text-white shadow"></textarea>
+      </div>
+      <button type="submit" class="bg-pink-500 text-white px-6 py-3 rounded-full hover:bg-pink-600 shadow-lg transform hover:scale-105 transition-all">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="text-center py-8 bg-gray-200 dark:bg-gray-900">
+    <div class="mb-4">
+      <a href="https://github.com/FarheenSultana0615" target="_blank" rel="noopener noreferrer" class="inline-block mx-2 text-gray-600 dark:text-gray-400 hover:text-pink-500">GitHub</a>
+      <a href="https://www.linkedin.com/in/farheen-sultana-54723a254/" target="_blank" rel="noopener noreferrer" class="inline-block mx-2 text-gray-600 dark:text-gray-400 hover:text-pink-500">LinkedIn</a>
+    </div>
+    <p class="text-gray-500 dark:text-gray-400">
+      &copy; 2025 Farheen Sultana. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ once: true, duration: 600 });</script>
+
+</body>
+</html>

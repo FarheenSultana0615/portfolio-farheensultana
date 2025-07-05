@@ -1,0 +1,87 @@
+html {
+    scroll-behavior: smooth;
+    cursor: none;
+}
+.cursor-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    /* Light mode gradient */
+    background: radial-gradient(circle, rgba(251, 113, 133, 0.8), rgba(216, 180, 254, 0.8), rgba(165, 180, 252, 0.8));
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.5), 0 0 30px rgba(192, 132, 252, 0.4);
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s;
+}
+
+/* Dark mode gradient for cursor */
+.dark .cursor-glow {
+    background: radial-gradient(circle, rgba(236, 72, 153, 0.9), rgba(192, 132, 252, 0.9), rgba(129, 140, 248, 0.9));
+    box-shadow: 0 0 25px rgba(236, 72, 153, 0.6), 0 0 40px rgba(192, 132, 252, 0.5);
+}
+
+body:has(a:hover) .cursor-glow,
+body:has(button:hover) .cursor-glow {
+    width: 40px;
+    height: 40px;
+}
+
+.modal {
+  display: none;
+}
+
+.modal.active {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal.active #modalContent {
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#themeIconMoon {
+    display: none;
+}
+.dark #themeIconSun {
+    display: none;
+}
+
+.dark #themeIconMoon {
+    display: block;
+}
